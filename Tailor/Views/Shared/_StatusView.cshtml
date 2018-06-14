@@ -1,0 +1,25 @@
+﻿<div class="form-group row">
+    <label for="input-@Model.Id" class="col-sm-2 col-form-label"><strong>Status</strong></label>
+    <div class="col-sm-10 col-form-label">
+        <div class="custom-control custom-checkbox">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input custom-control-input" type="checkbox" name="gridCheckboxes-@Model.Id" id="gridCheckboxes-outs-@Model.Id" value="Outstanding">
+                <label class="form-check-label custom-control-label" for="gridCheckboxes-outs-@Model.Id">
+                    Outstanding
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input custom-control-input" type="checkbox" name="gridCheckboxes-@Model.Id" id="gridCheckboxes-partSat-@Model.Id" value="PartSatisfied">
+                <label class="form-check-label custom-control-label" for="gridCheckboxes-partSat-@Model.Id">
+                    Partially Satisfied
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input custom-control-input" type="checkbox" name="gridCheckboxes-@Model.Id" id="gridCheckboxes-sat-@Model.Id" value="Satisfied">
+                <label class="form-check-label custom-control-label" for="gridCheckboxes-sat-@Model.Id">
+                    Satisfied
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

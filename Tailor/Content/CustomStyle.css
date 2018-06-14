@@ -1,0 +1,23 @@
+﻿.body-content{
+    margin-top: 50px;
+}
+
+.card,
+.footer {
+    margin-top: 10px;
+}
+
+.footer button{
+    margin: 5px;
+}
+
+.card .btn.btn-link{
+    padding: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.card .badge.price{
+    float: right;
+}

@@ -1,0 +1,34 @@
+﻿<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Name</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Template Name" aria-label="Template Name" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+        </div>
+    </div>
+    <span class="input-group-text" id="basic-addon1">Template visible only to me</span>
+</div>
+
+<h2>Sections</h2>
+
+<div class="prototype">
+    <div class="panel-group" >
+        @{ Html.RenderPartial("_PanelView", new Tailor.Models.PanelModel { Id="One", Title = "Accounts", Info = "It is used as an example", Body = new Tailor.Models.PanelBody { IncludeType = true }, Price="0.50" }); }
+        @{ Html.RenderPartial("_PanelView", new Tailor.Models.PanelModel { Id="Two", Title = "Appointments", Body = new Tailor.Models.PanelBody { IncludeType = true, IncludeStatus = true, DateFilter = new Tailor.Models.PanelDateFilter { Include = true, Title = "Filed" } }, Price="1.50" }); }
+        @{ Html.RenderPartial("_PanelView", new Tailor.Models.PanelModel { Id="Three", Title = "Insolvency", Body = new Tailor.Models.PanelBody { IncludeType = true, DateFilter = new Tailor.Models.PanelDateFilter { Include = true, Title = "Filed" } }, Price ="0.50" }); }
+    </div>
+</div>
+
+<div class="container">
+    <div class="footer row">
+        <button class="col-sm btn btn-default btn-lg">Back</button>
+        <button class="col-sm btn btn-default btn-lg">Collapse</button>
+        <button class="col-sm btn btn-default btn-lg">Preview</button>
+        <button class="col-sm btn btn-primary btn-lg">Save</button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿<div class="form-group row">
+    <label for="input-@Model.Id" class="col-sm-2 col-form-label"><strong>Date @Model.Body.DateFilter.Title</strong></label>
+    <div class="col-sm-10 col-form-label">
+        <select class="custom-select" id="dateFilter-@Model.Id">
+            <option selected>Choose...</option>
+            <option value="1">All</option>
+            <option value="2">Latest year</option>
+            <option value="3">Latest 3 years</option>
+            <option value="3">Latest 5 years</option>
+            <option value="3">Custom</option>
+        </select>
+    </div>
+
+    <label for="custom-input-@Model.Id" class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10 col-form-label">
+        <label for="from">From</label>
+        <input type="text" id="from" name="from" class="from-date">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to" class="to-date">
+    </div>
+</div>
